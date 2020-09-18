@@ -5,4 +5,4 @@ R.O.B.O. (Robô Operacional Binariamente Orientado)
 Java 8
 
 # Como Abrir e executar o projeto
-- Após efetuar o download do projeto, abri-lo em uma IDE java denominada Spring Tool Suite, e executa-lo como projeto Spring.  
+- Após efetuar o download do projeto, abri-lo em uma IDE java denominada Spring Tool Suite, e executá-lo como projeto Spring.  
