@@ -1,5 +1,8 @@
 package br.com.adriel.roboapirest.services;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class RestricoesRobo {
 
 	public RestricoesRobo() {

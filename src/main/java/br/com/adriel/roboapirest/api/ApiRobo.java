@@ -1,5 +1,6 @@
 package br.com.adriel.roboapirest.api;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -29,7 +30,8 @@ public class ApiRobo {
 	private Braco bracoDireito = new Braco();
 	private Cabeca cabeca = new Cabeca();
 	private Robo robo = new Robo(cabeca, bracoEsquerdo, bracoDireito);
-	private RestricoesRobo restricao = new RestricoesRobo();
+	@Autowired(required = true)
+	private RestricoesRobo restricao;
 
 	@GetMapping("/robo-inicializacao")
 	public ResponseEntity<RoboResponse<Robo>> getRoboInicial() {

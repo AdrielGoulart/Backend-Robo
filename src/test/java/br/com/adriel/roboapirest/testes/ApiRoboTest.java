@@ -15,12 +15,12 @@ public class ApiRoboTest {
 
 	@Test
 	public void teste1ProgressaoEstado() {
-		int estadoAtual = 1;
-		int novoEstado = 2;
+		int estadoAtual = 2;
+		int novoEstado = 1;
 
-		boolean response = roboRestricao.progressaoEstado(novoEstado, estadoAtual);
+		boolean progresao = this.roboRestricao.progressaoEstado(novoEstado, estadoAtual);
 
-		assertEquals(response, false);
+		assertEquals(progresao, true);
 	}
 
 	@Test
@@ -30,7 +30,7 @@ public class ApiRoboTest {
 
 		boolean response = roboRestricao.progressaoEstado(novoEstado, estadoAtual);
 
-		assertEquals(response, true);
+		assertEquals(response, false);
 	}
 
 	@Test
@@ -50,7 +50,7 @@ public class ApiRoboTest {
 
 		boolean response = roboRestricao.progressaoEstado(novoEstado, estadoAtual);
 
-		assertEquals(response, true);
+		assertEquals(response, false);
 	}
 
 	@Test
@@ -70,7 +70,7 @@ public class ApiRoboTest {
 
 		boolean response = roboRestricao.verificaEstadoInvalido(novoId, idEnumMax);
 
-		assertEquals(response, true);
+		assertEquals(response, false);
 	}
 
 	@Test
